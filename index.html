@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meeting Minutes App</title>
+    <meta name="author" content="Pranav Mehta">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Meeting Minutes App</h1>
+        <nav>
+            <ul>
+                <li><a href="#meeting-notes-example">Meeting Notes Example</a></li>
+                <li><a href="#meeting-notes-tool">Meeting Notes Tool</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Example Meeting Minutes:</h2>
+        <section id="meeting-notes-example">
+            <h3>Cool AI Device M1 Prototype Planning</h3>
+            <h4>Topic: brainstorming</h4>
+            <h4>Date: <span>04/01/2024</span></h4>
+            <h4>In Attendance:</h4>
+            <ul>
+                <li>Bob</li>
+                <li>Alice</li>
+                <li>Joe</li>
+                <li>Chris</li>
+                <li>Jennifer</li>
+            </ul>
+            <h4>Meeting Agenda:</h4>
+            <ol>
+                <li>Market research on available products</li>
+                <li>Discuss available budget</li>
+                <li>Lay out core product functionalities</li>
+            </ol>
+
+            <p>During the <b>meeting</b> we had <i>fun</i> and <em>partied</em> all night. <strong>lol.</strong></p>
+
+            <img src="images\party-people.jpg" alt="Party Time!">
+
+            <p>In short, it was not a very productive meeting. Here is a clip from our underpaid intern: </p>
+
+            <div>
+                <video></video>
+                <audio></audio>
+            </div>
+
+            <details>
+                <summary>About ChatGPT</summary>
+                <p>ChatGPT (Chat Generative Pre-trained Transformer) is a chatbot that uses natural language processing and generative AI to have human-like conversations. It can answer questions and help with tasks like writing emails, essays, and code. ChatGPT is owned by OpenAI, an artificial intelligence research lab. It was released on November 30, 2022, and its stable release was on February 13, 2024.</p>
+            </details>
+        </section>
+        <hr>
+        <h2>Meeting Note Tool</h2>
+        <section id="meeting-notes-tool">
+            <form id="meeting-note-form" name="meeting-note-form">
+                <fieldset>
+                    <legend>Name and Topic of Meeting</legend>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="topic">Meeting topic: </label>
+                    <input type="text" list="meeting-topic" id="topic" name="topic">
+                    <datalist id="meeting-topic">
+                        <option value="brainstorming">
+                        <option value="check-in">
+                        <option value="documentation">
+                        <option value="workday">
+                        <option value="party">
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <legend>Date and Time</legend>
+                    <input type="datetime-local" id="meeting-time" name="meeting-time">
+                </fieldset>
+                <fieldset>
+                    <legend>Team Members in Attendance</legend>
+                    <label for="member1">Alex</label>
+                    <input type="checkbox" id="member1" name="member1" value="Alex"><br>
+                    <label for="member2">Alice</label>
+                    <input type="checkbox" id="member2" name="member2" value="Alice"><br>
+                    <label for="member3">Bob</label>
+                    <input type="checkbox" id="member3" name="member3" value="Bob"><br>
+                    <label for="member4">Chris</label>
+                    <input type="checkbox" id="member4" name="member4" value="Chris"><br>
+                    <label for="member5">Ezekiel</label>
+                    <input type="checkbox" id="member5" name="member5" value="Ezekiel"><br>
+                    <label for="member6">Jennifer</label>
+                    <input type="checkbox" id="member6" name="member6" value="Jennifer"><br>
+                    <label for="member7">Joe</label>
+                    <input type="checkbox" id="member7" name="member7" value="Joe"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Meeting Notes</legend>
+                    <textarea id="notes" name="notes" rows="4" cols="50">Fill in notes here.</textarea><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Record Meeting</legend>
+                    <label for="recording-format">Recording Format: </label>
+                    <select name="recording-format" id="recording-format">
+                        <option value="audio" selected>Audio</option>
+                        <option value="video">Video</option>
+                    </select>
+                    <br>
+                    <label for="transcribe">Store Meeting Recording</label>
+                    <input type="radio" id="transcribe" name="transcribe"><br>
+                </fieldset>
+                <br>
+                <button id="submit">Submit</button>
+            </form>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <p>Copyright 2024. All rights reserved.</p>
+    </footer>
+</body>
+</html>
