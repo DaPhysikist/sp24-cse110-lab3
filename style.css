@@ -1,0 +1,7 @@
+:root {
+    --date-color: #1e90ff;
+}
+
+#date {
+    color: var(--date-color, blue);
+}
