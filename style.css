@@ -5,13 +5,3 @@
 #date {
     color: var(--date-color, blue);
 }
-
-li:has(~ li){
-    color:purple
-}
-
-main {
-    & > h2 {
-        color: rgb(10, 85, 77)
-    }
-}
