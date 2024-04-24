@@ -15,3 +15,12 @@ main {
         color: rgb(10, 85, 77)
     }
 }
+
+.nav-item {
+    color:gray
+}
+
+div * {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
