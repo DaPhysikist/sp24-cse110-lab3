@@ -2,11 +2,11 @@ ol {
     display: inline-block;
 }
 
-
 h1 {
     color:gray;
     text-decoration: underline;
     text-align: center;
+    position:sticky;
 }
 
 h1,h2,h3,h4 {
@@ -52,6 +52,7 @@ div * {
     row-gap: 5px;
     justify-items: stretch;
     align-items: stretch;
+    padding: 5%;
 }
 
 [class*="container"]  {
@@ -59,6 +60,7 @@ div * {
     flex-direction: column;
     align-items: center;
     row-gap:5px;
+    padding-bottom: 5px;
 }
 
 @media (min-width: 768px) {
@@ -76,4 +78,19 @@ div * {
 h4 {
     display: inline;
     margin: 10px;
+}
+
+.party-pic {
+    max-width:400px;
+    position:relative;
+    border-color:black;
+    border:2px;
+    border-style:solid;
+    border-radius: 25% 10%;
+}
+
+#intern-rec {
+    width:600px;
+    height:300px;
+    margin:auto;
 }
