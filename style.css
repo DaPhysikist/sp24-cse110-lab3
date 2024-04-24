@@ -4,6 +4,10 @@
     font-style: normal;
   }
 
+ol {
+    display: inline-block;
+}
+
 
 h1 {
     font-family: "Jersey 25", sans-serif;
@@ -70,4 +74,9 @@ div * {
     main {
         padding: 0 20px; 
     }
+}
+
+h4 {
+    display: inline;
+    margin: 10px;
 }
