@@ -46,7 +46,7 @@ main h2 {
 }
 
 .nav-item:active {
-    color: red;
+    color: color(from hsl(0 100% 50%) srgb r g b);
 }
 
 div * {
@@ -109,6 +109,6 @@ h4 {
 }
 
 button.submit {
-    color: white;
-    background-color: rgb(27, 196, 27);
+    color: color-mix(in hsl longer hue, hsl(0, 100%, 100%) 20%, white);
+    background-color: 
 }
