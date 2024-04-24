@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes App</title>
     <meta name="author" content="Pranav Mehta">
     <link rel="icon" href="images/favicon.ico">
@@ -12,8 +13,8 @@
         <h1>Meeting Minutes App</h1>
         <nav>
             <ul>
-                <li class="nav-item"><a href="#meeting-notes-example">Meeting Notes Example</a></li>
-                <li class="nav-item"><a href="#meeting-notes-tool">Meeting Notes Tool</a></li>
+                <li><a class="nav-item" href="#meeting-notes-example">Meeting Notes Example</a></li>
+                <li><a class="nav-item" href="#meeting-notes-tool">Meeting Notes Tool</a></li>
             </ul>
         </nav>
     </header>
@@ -38,13 +39,15 @@
                 <li>New: Lay out core product functionalities</li>
             </ol>
             <h4>Meeting Notes:</h4>
-            <p>During the <b>meeting</b> we had <i>fun</i> and <em>partied</em> all night. <strong>Lol.</strong></p>
+            <div class="container">
+                <p>During the <b>meeting</b> we had <i>fun</i> and <em>partied</em> all night. <strong>Lol.</strong></p>
 
-            <img src="images/party-people.jpg" alt="Party Time!">
+                <img src="images/party-people.jpg" alt="Party Time!">
 
-            <p>In short, who needs brainstorming? Here is a video clip (and audio clip) from our underpaid intern though (he's doing something): </p>
-            
-            <div>
+                <p>In short, who needs brainstorming? Here is a video clip (and audio clip) from our underpaid intern though (he's doing something): </p>
+            </div>
+
+            <div class="container">
                 <video src="media/IMG_7825.mov" controls width="640" height="360"></video><br>
                 <audio src="media/IMG_7825.mp3" controls></audio>
             </div>
@@ -58,7 +61,7 @@
         <h2>Meeting Note Tool</h2>
         <section id="meeting-notes-tool">
             <form id="meeting-note-form" name="meeting-note-form">
-                <fieldset>
+                <fieldset id="field1">
                     <legend>Name and Topic of Meeting</legend>
                     <label for="name">Name: </label>
                     <input type="text" id="name" name="name"><br><br>
@@ -72,11 +75,11 @@
                         <option value="party">
                     </datalist>
                 </fieldset>
-                <fieldset>
+                <fieldset id="field2">
                     <legend>Date and Time</legend>
                     <input type="datetime-local" id="meeting-time" name="meeting-time">
                 </fieldset>
-                <fieldset>
+                <fieldset id="field3">
                     <legend>Team Members in Attendance</legend>
                     <label for="member1">Alex</label>
                     <input type="checkbox" id="member1" name="member1" value="Alex"><br>
@@ -93,11 +96,11 @@
                     <label for="member7">Joe</label>
                     <input type="checkbox" id="member7" name="member7" value="Joe"><br>
                 </fieldset>
-                <fieldset>
+                <fieldset id="field4">
                     <legend>Meeting Notes</legend>
                     <textarea id="notes" name="notes" rows="4" cols="50">Fill in notes here.</textarea><br>
                 </fieldset>
-                <fieldset>
+                <fieldset id="field5">
                     <legend>Record Meeting</legend>
                     <label for="recording-format">Recording Format: </label>
                     <select name="recording-format" id="recording-format">

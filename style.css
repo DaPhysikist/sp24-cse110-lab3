@@ -6,21 +6,54 @@
     color: var(--date-color, blue);
 }
 
-li:has(~ li){
-    color:purple
+li:has(~ li) {
+    margin-bottom: 5px;
 }
 
-main {
-    & > h2 {
-        color: rgb(10, 85, 77)
-    }
+main h2 {
+    color: rgb(10, 85, 77);
 }
 
 .nav-item {
-    color:gray
+    color: rgb(21, 129, 179);
+}
+
+.nav-item:hover {
+    color: rgb(119, 167, 170);
+}
+
+.nav-item:active {
+    color: red;
 }
 
 div * {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#meeting-note-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:5px;
+}
+
+@media (min-width: 768px) {
+    #meeting-note-form {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        padding: 0 20px; 
+    }
 }
