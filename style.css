@@ -25,6 +25,10 @@ li:has(~ li) {
     margin-bottom: 5px;
 }
 
+label+input{
+    margin-left:10px;
+}
+
 main h2 {
     color: rgb(10, 85, 77);
 }
@@ -44,6 +48,10 @@ main h2 {
 div * {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+div p {
+    color:black;
 }
 
 #meeting-note-form {
@@ -93,4 +101,9 @@ h4 {
     width:600px;
     height:300px;
     margin:auto;
+}
+
+button.submit {
+    color: white;
+    background-color: rgb(27, 196, 27);
 }
