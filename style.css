@@ -1,13 +1,13 @@
-ol {
+ol {                                 /*bullet styling*/
     display: inline-block;
 }
 
 li{
-    size: 1em;
+    font-size: 1em;
 }
 
-h1 {
-    color:gray;
+h1 {                               /*header styling*/
+    color:gray;      
     text-decoration: underline;
     text-align: center;
     position:sticky;
@@ -17,7 +17,7 @@ h1,h2,h3,h4 {
     font-family: "Jersey 25", sans-serif;
 }
 
-:root {
+:root {                                     /*css variable*/
     --date-color: #1e90ff;
 }
 
@@ -25,7 +25,7 @@ h1,h2,h3,h4 {
     color: var(--date-color, blue);
 }
 
-li:has(~ li) {
+li:has(~ li) {                        /*combinators*/
     margin-bottom: 5px;
 }
 
@@ -41,22 +41,22 @@ main h2 {
     color: rgb(21, 129, 179);
 }
 
-.nav-item:hover {
+.nav-item:hover {                       /*pseudo-class*/
     color: rgb(119, 167, 170);
 }
 
 .nav-item:active {
-    color: color(from hsl(0 100% 50%) srgb r g b);
+    color: hsl(0 100% 50%);
 }
 
-div * {
+div * {                         /*universal selector*/
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 div p {
     color:black;
-    size: 1rem;
+    font-size: 1rem;
 }
 
 #meeting-note-form {
@@ -68,7 +68,7 @@ div p {
     padding: 5%;
 }
 
-[class*="container"]  {
+[class*="container"]  {                
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,6 +109,6 @@ h4 {
 }
 
 button.submit {
-    color: color-mix(in hsl longer hue, hsl(0, 100%, 100%) 20%, white);
-    background-color: 
+    color: white;
+    background-color: rgb(15, 190, 15);
 }
