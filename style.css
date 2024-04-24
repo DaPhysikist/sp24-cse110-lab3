@@ -1,19 +1,16 @@
-.jersey-25-regular {
-    font-family: "Jersey 25", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
 ol {
     display: inline-block;
 }
 
 
 h1 {
-    font-family: "Jersey 25", sans-serif;
     color:gray;
     text-decoration: underline;
     text-align: center;
+}
+
+h1,h2,h3,h4 {
+    font-family: "Jersey 25", sans-serif;
 }
 
 :root {
@@ -57,7 +54,7 @@ div * {
     align-items: stretch;
 }
 
-.container {
+[class*="container"]  {
     display: flex;
     flex-direction: column;
     align-items: center;
